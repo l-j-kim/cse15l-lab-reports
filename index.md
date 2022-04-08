@@ -1,33 +1,34 @@
-Hello World!
----
-
-*Italics*
-**Bold**
-
-Heading 1
+Markdown Tests
 ====
 
-Heading 2
+*This font is is italics.*
+
+**This font is bolded!**
+
+BIG Heading
+====
+
+Not as big Heading
 ----
 
-[Link](https://canvas.ucsd.edu/)
-Image 
-![Image](https://i.natgeofe.com/k/6289c775-a06c-426a-badb-8d181a55237b/raccoon-grass_2x1.jpg)
+[yet another Canvas Link](https://canvas.ucsd.edu/)
 
-> Blockquote
+![I haven't seen a single racoon yet](https://i.natgeofe.com/k/6289c775-a06c-426a-badb-8d181a55237b/raccoon-grass_2x1.jpg)
 
-* list 1
-* list 2
-* list 3
+> I didn't know blockquotes were a thing
 
-1. num 1
-2. num 2
-3. num 3
+* important list item 1
+* don't forget list item 2
+* remember list item 3
+
+1. do this first
+2. do this second
+3. do this last
 
 ***
 
-`Inline`
+`Inlining is cool`
 
 ```
-code block
+code blocking is also cool
 ```
