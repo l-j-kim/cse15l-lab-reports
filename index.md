@@ -28,4 +28,6 @@ Image
 
 `Inline`
 
-····code block····
+```
+code block
+```
