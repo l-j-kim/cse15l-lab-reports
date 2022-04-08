@@ -28,6 +28,4 @@ Image
 
 `Inline`
 
-```code block
-this is more code
-test```
+```code block```
