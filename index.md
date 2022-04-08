@@ -29,5 +29,5 @@ Image
 `Inline`
 
 ```code block
-```this is more doe
-```test
+this is more code
+test```
