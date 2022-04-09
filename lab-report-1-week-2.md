@@ -36,6 +36,15 @@ For example, the above image shows the result of running the pwd command on the 
 
 Moving Files with scp
 ---
+To try moving files between your computer and the server, first create and run a java file (the image below shows a simple "Hello World" file). 
+
+![download page](Lab2-helloWorldComputer.png) 
+
+Then, in the terminal, type in the command `scp filename.java username@ieng6.ucsd.edu:/` where file name is the name of the file you created and username is your class username; this will create a copy of the file on the server.
+
+Now, if you log into the server again, you should be able to see the file using `ls` and run the file itself on the server.
+
+![download page](Lab2-helloWorldServer.png) 
 
 Setting an SSH Key
 ---
