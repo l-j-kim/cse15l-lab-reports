@@ -1,7 +1,7 @@
 Markdown Tests
 ====
 
-*This font is is italics.*
+_This font is is italics._
 
 **This font is bolded!**
 
