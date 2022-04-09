@@ -48,6 +48,16 @@ Now, if you log into the server again, you should be able to see the file using 
 
 Setting an SSH Key
 ---
+Setting up an SSH key will make it easier to log in to the server; to do this, on your computer terminal, type `$ ssh-keygen` and press enter repeatedly until the public key has been saved (do not enter a passphrase). 
+
+After that, log into the server again and type the command `mkdir .ssh`, log out again, and type the command scp /Users/user/.ssh/id_rsa.pub username@ieng6.ucsd.edu:~/.ssh/authorized_keys where 'user' is your computer username and 'username' is your class specific username.
+
+Now try logging in and out of the server; you should be able to do this without typing in your password, similar to as shown by the image below.
+
+![download page](Lab2-sshLogin.png) 
 
 Optimizing Remote Running
 ---
+To make the process of moving files easier, try to come up with an efficient process to copy a file onto the remote server and running it. To help, consider tricks like using semicolons to write multiple commands on one line or using the up arrow to recall the last command you used. Below is an example of copying a file to the server using two lines and five keystrokes.
+
+![download page](Lab2-efficiency.png) 
