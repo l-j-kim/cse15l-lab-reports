@@ -47,4 +47,4 @@ These changes were made as a result from the failure-inducing imput linked [here
 
 ![image](lab-report-2/output3.png)
 
-The bug in this test is that the code assumes the link text ends at the first closed parenthesis, and will hence truncate the link early. If the last link contains parenthesis, it will cause the program to run an infinite loop and run out of memory, producing the java.lang.OutOfMemoryError as a symptom. For the failure-inducing imput used, there were two links both containing parenthesis, which caused the program to throw the java.lang.OutOfMemoryError. 
+The bug in this test is that the code assumes the link text ends at the first closed parenthesis, and will hence truncate the link early. If the last link contains parenthesis, it will cause the program to run an infinite loop and run out of memory, producing the java.lang.OutOfMemoryError as a symptom. For the failure-inducing imput used, there were two links both containing parenthesis, which caused the program to throw the java.lang.OutOfMemoryError shown above. 
