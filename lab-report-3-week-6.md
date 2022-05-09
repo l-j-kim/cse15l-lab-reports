@@ -31,7 +31,7 @@ This same process was repeated for the ieng6 server, with the private keys being
 
 ![image](lab-report-3/private-key-server.png)
 
-After these processes were completed, it became possible to use the command `git push origin main` while logged into the ieng6 server, sa can be seen below.
+After these processes were completed, it became possible to use the command `git push origin main` while logged into the ieng6 server, as can be seen below.
 
 ![image](lab-report-3/push-from-server.png)
 
@@ -46,13 +46,14 @@ It is also possible to copy entire directories from my personal device to the ie
 
 After that, on the ieng6 server, the directory (which is markdown-parse in this case) can be compiled by `javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java` on the command line, and then run using `java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest`. This will run all the JUnit tests created in this directory, as shown below.
 
-![image](compile-run.png)
+![image](lab-report-3/compile-run.png)
 
 To make things more efficient, all the aforementioned commands in this section can be run at once by separating each command using a semicolon. The resulting command will look like this:
 > scp -r . cs15lsp22aaw@ieng6.ucsd.edu:~/markdown-parse; ssh cs15lsp22aaw@ieng6.ucsd.edu cd markdown-parse; javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java; java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest
 
 The results of running this command can be seen below:
 
-![image](all-1.png) 
-![image](all-2.png)
+![image](lab-report-3/all-1.png) 
+
+![image](lab-report-3/all-2.png)
 
