@@ -35,6 +35,7 @@ After these processes were completed, it became possible to use the command `git
 
 ![image](lab-report-3/push-from-server.png)
 
+The commit can also be viewed on github from this [link](https://github.com/l-j-kim/test/commit/81d51678d39dc6965cebfb169aeeb7dbd7759d21).
 
 Copy Whole Directories with scp -r
 ---
@@ -49,7 +50,7 @@ After that, on the ieng6 server, the directory (which is markdown-parse in this 
 ![image](lab-report-3/compile-run.png)
 
 To make things more efficient, all the aforementioned commands in this section can be run at once by separating each command using a semicolon. The resulting command will look like this:
-> scp -r . cs15lsp22aaw@ieng6.ucsd.edu:~/markdown-parse; ssh cs15lsp22aaw@ieng6.ucsd.edu cd markdown-parse; javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java; java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest
+> scp -r . markdown-parse ieng6:./markdown-parse; ssh cs15lsp22aaw@ieng6.ucsd.edu "cd markdown-parse; javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java; java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest"
 
 The results of running this command can be seen below:
 
