@@ -9,7 +9,7 @@ Pasting the snippet into the [CommonMark Demo Site](https://spec.commonmark.org/
 ![image](lab-report-4/snippet1.png)
 
 From this, it was concluded that a test using the snippet should produce the list: 
->{google.com, google,com, ucsd.edu}. 
+>{`google.com, google,com, ucsd.edu}. 
 
 A file `lab4-test1.md` was created containing the snippet and the test `testLab4Snippet1()` was created to test if the list produced by MarkdownParse was the same as the expecteed list. The test is shown below.
 
