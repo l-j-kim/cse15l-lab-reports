@@ -24,7 +24,7 @@ Also, here is the result of running the test on the given implementation.
 
 ![image](lab-report-5/givenoutput22.png)
 
-For this test, my implementation provided the correct output, while the given implemention did not. This is due to how the given implementation checks to see if the potential list has a space in it or not, adding it if it doesn't and skipping it if it does. Since the text, `[/bar\* "ti\*tle"]` contains a space in it, the given version of MarkdownParse would have excluded it even though the rest of the text is in double quotes and it technically counts as a valid link. The image below shows the code from the given implentation described above.
+For this test, my implementation provided the correct output, while the given implemention did not. This is because of a bug in  the given implementation that makess it so it checks to see if the potential list has a space in it or not, adding it if it doesn't and skipping it if it does. Since the text, `[/bar\* "ti\*tle"]` contains a space in it, the given version of MarkdownParse would have excluded it even though the rest of the text is in double quotes and it technically counts as a valid link. The image below shows the code from the given implentation described above.
 
 ![image](lab-report-5/givencode22.png)
 
@@ -42,6 +42,6 @@ Meanwhile, the output from running the test on the given implementation is shown
 
 ![image](lab-report-5/givenoutput32.png)
 
-This time, my implementation produced the wrong result, while the given implementation produced the right one. This is due to how my implementation will consider anything between the first open parenthesis and last closing parenthesis to be part of a valid link no matter what it contains. Hence, even if the text contained something that would invalidate it as a link, like a new line or a space (without the double quotes), my implementation would return it as a link. The code for my implementation is shown below. 
+This time, my implementation produced the wrong result, while the given implementation produced the right one. This is due to a bug in my implementation, where it will consider anything between the first open parenthesis and last closing parenthesis to be part of a valid link no matter what it contains. Hence, even if the text contained something that would invalidate it as a link, like a new line or a space (without the double quotes), my implementation would return it as a link. The code for my implementation is shown below. 
 
 ![image](lab-report-5/mycode32.png)
