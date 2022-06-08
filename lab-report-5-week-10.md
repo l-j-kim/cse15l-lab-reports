@@ -30,18 +30,18 @@ For this test, my implementation provided the correct output, while the given im
 
 Test 2
 ---
-A different test whose output differed between the two versions of MarkdownParser is test 32, which can be found [here](https://github.com/nidhidhamnani/markdown-parser/blob/main/test-files/32.md?plain=1). The result the [CommonMark Demo Site](https://spec.commonmark.org/dingus/) produces from this test is shown below.
+A different test whose output differed between the two versions of MarkdownParser is test 41, which can be found [here](https://github.com/nidhidhamnani/markdown-parser/blob/main/test-files/41.md?plain=1). The result the [CommonMark Demo Site](https://spec.commonmark.org/dingus/) produces from this test is shown below.
 
-![image](lab-report-5/result32.png)
+![image](lab-report-5/result41.png)
 
 This output shows that the test does not produce a valid link, so the implementations should not have any links in their output and only produce `[]`. Running the test on my implementation produces this result.
 
-![image](lab-report-5/myoutput32.png)
+![image](lab-report-5/myoutput41.png)
 
 Meanwhile, the output from running the test on the given implementation is shown below.
 
-![image](lab-report-5/givenoutput32.png)
+![image](lab-report-5/givenoutput41.png)
 
 This time, my implementation produced the wrong result, while the given implementation produced the right one. This is due to a bug in my implementation, where it will consider anything between the first open parenthesis and last closing parenthesis to be part of a valid link no matter what it contains. Hence, even if the text contained something that would invalidate it as a link, like a new line or a space (without the double quotes), my implementation would return it as a link. The code for my implementation is shown below. 
 
-![image](lab-report-5/mycode32.png)
+![image](lab-report-5/mycode41.png)
